@@ -1,0 +1,22 @@
+{
+  "name": "express-portfolio",
+  "version": "1.0.0",
+  "description": "a simple portfolio made with express and boostrap",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FDMcreative/Express-Portfolio.git"
+  },
+  "author": "Federico Del Monte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FDMcreative/Express-Portfolio/issues"
+  },
+  "homepage": "https://github.com/FDMcreative/Express-Portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
