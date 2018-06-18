@@ -15,22 +15,28 @@ app.use(express.static(`${__dirname}/public`));
 //logging middleware
 app.use( morgan('dev') );
 
-//add some middleware
-// app.all('*', (req, res, next) => {
-//   res.writeHead(200, { 'Content-Type': 'text/plain'});
-//   next();
-// });
-
 app.get('/', (req, res) => {
-  res.status(200).render('index', { heading: 'welcome to the homepage' });
+  res.status(200).render('index', { heading: 'Welcome to my portfolio' });
 });
 
 app.get('/about', (req, res) => {
-  res.status(200).render('index', { heading: 'welcome to the about page' });
+  res.status(200).render('about', { heading: 'Who am I?' });
+});
+
+app.get('/contact', (req, res) => {
+  res.status(200).render('contact', { heading: 'Contact me !' });
+});
+
+app.get('/project1', (req, res) => {
+  res.status(200).render('project1', { heading: 'Super Mario Bros - Memory Game' });
+});
+
+app.get('/project-coming-soon', (req, res) => {
+  res.status(200).render('project-coming-soon', { heading: 'Project Coming Soon !' });
 });
 
 app.get('*', (req, res) => {
-  res.status(404).render('index', { heading: '404: file not found' });
+  res.status(404).render('404', { heading: '404: File Not Found !' });
 });
 
 //listen to traffic on localhost:3000

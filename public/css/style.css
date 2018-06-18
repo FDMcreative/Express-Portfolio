@@ -1,7 +1,22 @@
+* {
+  color: white;
+}
+
 body {
   background: black;
 }
 
 main {
   margin: 10px;
+}
+
+h1 {
+  color: blue;
+  margin: 10px;
+}
+
+a {
+  font-style: italic;
+  font-weight: bold;
+  color: lightgrey;
 }
